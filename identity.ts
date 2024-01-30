@@ -6,8 +6,12 @@
 //     return value;
 //   }
 
-function identity<T extends number | string>(value: T): T {
-  return value;
+export namespace IdentityFunctions {
+  export function identity<T extends number | string>(value: T): T {
+    return value;
+  }
+
+  export function sum() {}
 }
 
 console.log(identity<number>(40));
